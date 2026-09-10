@@ -16,11 +16,17 @@ export default function OutsideIDE() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-3">
-          {["Travel", "Gym"].map((label) => (
-            <div key={label} className="h-24 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 dark:bg-ink bg-white grid place-items-center text-xs tracking-widest text-gray-400 dark:text-gray-500">
-              {label.toUpperCase()}
-            </div>
-          ))}
+          <div className="relative overflow-hidden rounded-xl border border-dashed border-gray-300 dark:border-gray-700 bg-white dark:bg-ink">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/travel.jpg" alt="Travel" className="h-36 w-full object-cover sm:h-40" />
+            <div className="absolute inset-0 pointer-events-none ring-0 border-0" />
+            <span className="absolute bottom-1.5 left-1.5 bg-black/60 text-white text-[10px] tracking-widest px-2 py-0.5 rounded-full backdrop-blur">TRAVEL</span>
+          </div>
+          <div className="relative overflow-hidden rounded-xl border border-dashed border-gray-300 dark:border-gray-700 bg-white dark:bg-ink">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/gym.JPG" alt="Gym" className="h-36 w-full object-cover sm:h-40 object-center" />
+            <span className="absolute bottom-1.5 left-1.5 bg-black/60 text-white text-[10px] tracking-widest px-2 py-0.5 rounded-full backdrop-blur">GYM</span>
+          </div>
         </div>
       </div>
     </section>
