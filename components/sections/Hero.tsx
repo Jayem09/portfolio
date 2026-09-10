@@ -54,7 +54,6 @@ export default function Hero() {
             <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-ink text-white dark:bg-white dark:text-black text-[9px] tracking-[0.2em] px-2 py-0.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap font-medium">
               INVERTED SPEAR · DOMAIN EXPANSION
             </span>
-            <span className="absolute -bottom-1 -right-1 h-3 w-3 rounded-full bg-green-500 border-2 border-white dark:border-ink shadow group-hover:hidden" aria-hidden title="Available for work" />
           </div>
         </div>
       </div>
