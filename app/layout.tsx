@@ -7,10 +7,12 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your Name — Software Engineer",
-  description: "Software Engineer portfolio — Next.js, React, Laravel. Building fast, accessible web apps.",
+  title: "John Mark Dinglasan — Software Engineer",
+  description: "John Mark L. Dinglasan — Software Engineer (React, Python, Flask, Node.js) from Lipa, Philippines. Built e-commerce platforms, automation tools, and thesis systems. Open to full-time roles.",
   metadataBase: new URL("https://example.com"),
-  openGraph: { title: "Your Name — Software Engineer", description: "Portfolio", type: "website" },
+  openGraph: { title: "John Mark Dinglasan — Software Engineer", description: "Portfolio of John Mark L. Dinglasan — React, Python, Flask, Tauri, AWS, Docker", type: "website" },
+  keywords: ["John Mark Dinglasan","Software Engineer Philippines","Full Stack Developer Lipa","React Developer","Python Automation","Flask Developer"],
+  authors: [{ name: "John Mark Dinglasan" }],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

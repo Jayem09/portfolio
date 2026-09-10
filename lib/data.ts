@@ -5,41 +5,96 @@ export type Education = { dates: string; title: string; institution: string; cam
 
 export const featuredBuild = {
   label: "Featured Build",
-  title: "ShipFast — private vault & workflow OS",
-  description: "Local-first password vault and personal workflow desktop app. Built with Tauri + Rust + Next.js. End-to-end encrypted, offline-capable.",
+  title: "Instagram Business Email Scraper",
+  description: "Python automation using ADB + UIAutomator that drives a real Instagram app on an Android emulator to extract business contact emails. Multi-stage pipeline: bio scan → Contact/Email button detection → popup parsing → logcat mailto fallback. Packaged as Flask web app with one-click launchers for non-technical clients.",
   image: "",
   href: "#projects",
-  ctaLabel: "Read case study",
+  ctaLabel: "View Project",
 };
 
 export const experiences: Experience[] = [
-  { dates: "2023 — Present", title: "Software Engineer", company: "Acme Corp", location: "Manila, PH — Remote", description: "Shipped 3 client platforms with Next.js + Laravel. Cut page load 40% via ISR and edge caching. Led SEO migration (+62% organic).", tags: ["Next.js","Laravel","PostgreSQL"] },
-  { dates: "2021 — 2023", title: "Full-Stack Developer", company: "Freelance", location: "Remote", description: "Delivered 15+ WordPress + React sites. Integrated Stripe, GSAP, OpenAI APIs.", tags: ["React","WordPress","PHP"] },
+  {
+    dates: "Feb 2026 — Mar 2026",
+    title: "Software Engineer Intern",
+    company: "SMS Tyre Depot",
+    location: "Lipa, Philippines",
+    description: "Contributed to an e-commerce platform with React.js and MySQL. Supported cloud infra and deployment with Docker and AWS, assisted PayMongo gateway integration, and improved SEO / e-commerce SEO. Exposure to Tauri for desktop apps.",
+    tags: ["React.js","MySQL","Docker","AWS","PayMongo","SEO","Tauri"],
+  },
+  {
+    dates: "Sep 2025 — Present",
+    title: "Freelance Developer",
+    company: "Student Clients / Thesis Projects",
+    location: "Remote — Freelance Academic & Web Development",
+    description: "Design and develop websites and web systems for thesis/capstone projects. Create SRS, ERD, DFD, and Use Case Diagrams, assist with requirement analysis and feature planning, and support optimization, debugging, deployment, and final revisions.",
+    tags: ["React.js","Node.js","MySQL","PostgreSQL","Documentation"],
+  },
+  {
+    dates: "Aug 2024 — Feb 2025",
+    title: "Full Stack Web Developer",
+    company: "Edar CMT",
+    location: "Philippines — E-Commerce Website",
+    description: "Designed and built an end-to-end e-commerce platform: frontend UI, backend services, and DB architecture. Implemented product catalog, cart, checkout, auth, and order management; integrated payments, auth providers, and notifications; authored API contracts and system architecture docs; deployed and maintained in production.",
+    tags: ["React.js","Node.js","PostgreSQL","MySQL","Docker","AWS"],
+  },
+  {
+    dates: "Nov 2023 — May 2024",
+    title: "IT Consultant",
+    company: "Edar CMT",
+    location: "Calamba, Philippines",
+    description: "Managed business website and internal IT systems. Built e-commerce pages, booking forms, and inventory tools; handled troubleshooting, system setup, data security/backups, and staff support.",
+    tags: ["WordPress","MySQL","IT Support","Inventory Systems"],
+  },
 ];
 
 export const projects: Project[] = [
-  { slug: "shipfast", title: "ShipFast", description: "Local-first vault + workflow OS.", image: "", liveUrl: "#", githubUrl: "#", tags: ["Tauri","Rust","Next.js"] },
-  { slug: "pawsitive", title: "PawsitiveCare", description: "Vet clinic booking platform.", image: "", liveUrl: "#", githubUrl: "#", tags: ["Laravel","React"] },
-  { slug: "keepr", title: "Keepr", description: "Private bookmarks & notes.", image: "", liveUrl: "#", githubUrl: "#", tags: ["Next.js","Supabase"] },
-  { slug: "events", title: "Events Hub", description: "City event aggregator.", image: "", liveUrl: "#", githubUrl: "#", tags: ["Next.js","PostgreSQL"] },
+  {
+    slug: "instagram-scraper",
+    title: "Instagram Business Email Scraper",
+    description: "ADB + UIAutomator automation that extracts emails from Instagram business profiles via a real Android emulator. Flask UI + Windows/Mac launchers for non-technical clients.",
+    image: "",
+    liveUrl: "",
+    githubUrl: "",
+    tags: ["Python","ADB","UIAutomator","Flask","Automation"],
+  },
+  {
+    slug: "edar-ecommerce",
+    title: "Edar CMT E-Commerce Platform",
+    description: "End-to-end e-commerce platform: catalog, cart, checkout, auth, orders, payments, and notifications. Full frontend, backend, and DB architecture with production deployment and monitoring.",
+    image: "",
+    liveUrl: "",
+    githubUrl: "",
+    tags: ["React.js","Node.js","MySQL","PostgreSQL","Docker","AWS"],
+  },
 ];
 
 export const certifications: Certification[] = [
-  { dates: "2024", title: "Meta Front-End Developer", issuer: "Coursera", credentialUrl: "#" },
-  { dates: "2023", title: "AWS Cloud Practitioner", issuer: "AWS", credentialUrl: "#" },
+  { dates: "2025", title: "The Web Developer Bootcamp 2025", issuer: "Udemy", credentialUrl: "" },
+  { dates: "2024", title: "CISCO Networking Basics", issuer: "Cisco", credentialUrl: "" },
+  { dates: "2024", title: "IT Specialist: HTML, CSS, JavaScript", issuer: "Certiport", credentialUrl: "" },
 ];
 
 export const education: Education[] = [
-  { dates: "2018 — 2022", title: "BS Information Technology", institution: "Polytechnic University of the Philippines", campus: "Manila, PH" },
+  { dates: "Aug 2022 — Aug 2026", title: "Bachelor of Science in Information Technology", institution: "University of Batangas", campus: "Lipa Campus, Philippines" },
 ];
 
-export const techStack = ["Next.js","React","TypeScript","Tailwind","Node.js","Laravel","WordPress","PostgreSQL","PHP","Rust","Tauri"];
+export const techStack = [
+  "Java","JavaScript","Python","Node.js","React.js","Flask","Tauri",
+  "Web Scraping","ADB","UIAutomator",
+  "Docker","Kubernetes","Gradle","NPM","Git","GitLab Pipeline",
+  "PostgreSQL","MySQL","MSSQL",
+  "AWS","DigitalOcean",
+  "PayMongo","SEO","E-commerce SEO",
+  "CentOS","Windows","macOS",
+];
 
 export const contact = {
   headline: "Let's work together.",
-  sub: "Available for full-time roles and freelance builds — Next.js, Laravel, WordPress, and full-stack. Also open to SEO and performance audits.",
-  email: "you@example.com",
-  calendly: "https://calendly.com/",
-  linkedin: "https://linkedin.com/in/",
+  sub: "Open to full-time Software Engineer roles and freelance builds — React, Python, Flask, Node.js, and full-stack web systems. Based in Lipa, Philippines (remote-friendly). Let's ship something useful.",
+  email: "johndinglasan12@gmail.com",
+  phone: "+63 961 167 8278",
+  calendly: "mailto:johndinglasan12@gmail.com",
+  linkedin: "mailto:johndinglasan12@gmail.com",
   github: "https://github.com/",
+  resume: "/resume.pdf",
 };

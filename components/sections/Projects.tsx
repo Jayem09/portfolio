@@ -9,11 +9,13 @@ export default function Projects() {
           <ProjectCard key={p.slug} project={p} />
         ))}
       </div>
-      <div className="flex justify-center pt-2">
-        <a href="#" className="group inline-flex items-center gap-1.5 bg-ink text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:scale-[1.03] transition-transform dark:bg-white dark:text-black">
-          Explore {Math.floor(projects.length / 5) * 5}+ Projects <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
-        </a>
-      </div>
+      {projects.length >= 3 && (
+        <div className="flex justify-center pt-2">
+          <a href="#" className="group inline-flex items-center gap-1.5 bg-ink text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:scale-[1.03] transition-transform dark:bg-white dark:text-black">
+            Explore More <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+          </a>
+        </div>
+      )}
     </section>
   );
 }

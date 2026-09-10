@@ -9,11 +9,11 @@ export default function Contact() {
           <a href={`mailto:${contact.email}`} className="flex items-center gap-3 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-4 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors bg-white dark:bg-ink">
             <span className="text-sm font-medium text-gray-900 dark:text-white">{contact.email}</span>
           </a>
-          <a href={contact.calendly} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-4 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors bg-white dark:bg-ink text-sm font-medium text-gray-900 dark:text-white">
-            Let&apos;s Talk — Schedule Call <span aria-hidden>→</span>
+          <a href={`tel:${contact.phone.replace(/\s/g,'')}`} className="flex items-center gap-3 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-4 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors bg-white dark:bg-ink text-sm font-medium text-gray-900 dark:text-white">
+            {contact.phone} <span aria-hidden>→</span>
           </a>
-          <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-4 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors bg-white dark:bg-ink text-sm font-medium text-gray-700 dark:text-gray-300">
-            LinkedIn <span aria-hidden>→</span>
+          <a href={contact.resume} target="_blank" className="flex items-center gap-3 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-4 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors bg-white dark:bg-ink text-sm font-medium text-gray-700 dark:text-gray-300">
+            View Resume (PDF) <span aria-hidden>→</span>
           </a>
           <a href={contact.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-4 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors bg-white dark:bg-ink text-sm font-medium text-gray-700 dark:text-gray-300">
             GitHub <span aria-hidden>→</span>
