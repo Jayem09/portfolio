@@ -2,10 +2,10 @@ export default function TimelineItem({ dates, title, subtitle, location, descrip
   return (
     <div className="relative sm:grid sm:grid-cols-[160px_24px_1fr] sm:gap-4 group">
       <p className="text-xs font-medium text-gray-400 dark:text-gray-500 whitespace-nowrap mb-1 sm:mb-0 sm:pt-1 sm:text-right">{dates}</p>
-      {/* vertical line + dot - desktop - exact snippet requested */}
+      {/* vertical line + dot - desktop - exact snippet requested - line on all including last */}
       <div className="hidden sm:flex relative flex flex-col items-center">
         <span className="mt-1.5 w-3 h-3 rounded-full bg-ink dark:bg-white ring-4 ring-white dark:ring-gray-900 shrink-0 z-10" aria-hidden />
-        {!isLast && <span className="w-px flex-1 bg-gray-200 dark:bg-gray-700" aria-hidden />}
+        <span className="w-px flex-1 bg-gray-200 dark:bg-gray-700" aria-hidden />
       </div>
       {/* mobile dot inline with title */}
       <div className="sm:hidden flex items-center gap-2 mb-1">
