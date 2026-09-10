@@ -24,8 +24,17 @@ export default function Hero() {
           <p className="text-xs text-gray-400 dark:text-gray-500">Lipa, Philippines · +63 961 167 8278 · johndinglasan12@gmail.com · Available for remote</p>
         </div>
         <div className="shrink-0 flex justify-start sm:justify-end">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/me.jpeg" alt="John Mark Dinglasan" className="h-28 w-28 sm:h-36 sm:w-36 rounded-2xl object-cover border border-dashed border-gray-300 dark:border-gray-700 shadow-sm bg-white dark:bg-ink" />
+          <div className="relative group">
+            <div className="absolute inset-0 rounded-full border border-dashed border-gray-300 dark:border-gray-700 scale-[1.08] opacity-60 group-hover:rotate-6 transition-transform duration-700" aria-hidden />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-white/10 dark:to-white/5 blur-[1px] scale-[1.02]" aria-hidden />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/me.jpeg"
+              alt="John Mark Dinglasan"
+              className="relative h-32 w-32 sm:h-40 sm:w-40 rounded-full object-cover border-2 border-white dark:border-ink shadow-lg animate-float group-hover:scale-[1.03] transition-transform duration-500"
+            />
+            <span className="absolute -bottom-1 -right-1 h-3 w-3 rounded-full bg-green-500 border-2 border-white dark:border-ink shadow" aria-hidden title="Available for work" />
+          </div>
         </div>
       </div>
     </section>
