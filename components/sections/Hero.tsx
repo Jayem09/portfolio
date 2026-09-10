@@ -7,7 +7,7 @@ export default function Hero() {
             <h1 className="text-3xl sm:text-4xl font-light tracking-tight text-gray-900 dark:text-white">John Mark Dinglasan</h1>
             <p className="text-xl sm:text-2xl font-light tracking-tight text-gray-500 dark:text-gray-400">— Software Engineer</p>
             <p className="text-sm sm:text-base text-gray-500 dark:text-gray-400 max-w-xl leading-relaxed">
-              BSIT @ University of Batangas (Lipa) — I build e-commerce platforms and automation tools with React.js, Python, Flask, Node.js, and Tauri. Shipped production e-commerce systems, PayMongo integrations, and a Flask-based Instagram automation tool used by freelance clients.
+              Final-year BSIT at University of Batangas — Lipa. I help students turn their thesis ideas into real, working sites, and I ship my own stuff too — like an e-commerce platform that handles real PayMongo orders and a small Python tool that automates Instagram work my client used to do by hand.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
