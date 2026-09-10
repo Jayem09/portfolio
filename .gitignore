@@ -33,3 +33,7 @@ yarn-error.log*
 next-env.d.ts
 
 # superpowers workspace (git-ignored already via contained)
+
+# images originals
+*.heic
+John-Mark-Dinglasan.pdf
