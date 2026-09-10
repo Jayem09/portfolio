@@ -9,9 +9,9 @@ export default function Experience() {
           View Details <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
         </a>
       </div>
-      <div className="space-y-7 sm:space-y-8">
-        {experiences.map((e) => (
-          <TimelineItem key={e.title + e.dates} dates={e.dates} title={e.title} subtitle={e.company} location={e.location} description={e.description} tags={e.tags} />
+      <div className="relative space-y-7 sm:space-y-8">
+        {experiences.map((e, idx) => (
+          <TimelineItem key={e.title + e.dates} dates={e.dates} title={e.title} subtitle={e.company} location={e.location} description={e.description} tags={e.tags} isLast={idx === experiences.length - 1} />
         ))}
       </div>
     </section>
