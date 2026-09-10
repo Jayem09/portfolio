@@ -27,7 +27,6 @@ export default function Hero() {
               View Resume →
             </a>
           </div>
-          <p className="text-xs text-gray-400 dark:text-gray-500">Final-year BSIT @ University of Batangas — Lipa · +63 961 167 8278 · Available for remote</p>
         </div>
         <div className="shrink-0 flex justify-start sm:justify-end">
           <div className="relative group h-32 w-32 sm:h-40 sm:w-40">
