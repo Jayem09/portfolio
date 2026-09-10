@@ -6,14 +6,14 @@ export default function FeaturedBuild() {
   return (
     <section className="w-full overflow-hidden rounded-xl border border-dashed border-gray-300 bg-white shadow-sm dark:border-gray-700 dark:bg-ink">
       <div className="grid gap-0 sm:grid-cols-[300px_1fr] sm:items-stretch">
-        <a href={featuredBuild.href} target="_blank" rel="noopener noreferrer" className="bg-gray-50 dark:bg-black/20 overflow-hidden flex items-center justify-center group p-8 sm:p-10 border-b sm:border-b-0 sm:border-r border-dashed border-gray-200 dark:border-gray-700">
+        <a href={featuredBuild.href} target="_blank" rel="noopener noreferrer" className="bg-gray-50 dark:bg-black/20 overflow-hidden flex items-center justify-center group p-4 sm:p-6 border-b sm:border-b-0 sm:border-r border-dashed border-gray-200 dark:border-gray-700 min-h-[200px] sm:min-h-[220px]">
           {hasImg ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={isExternal ? featuredBuild.image : featuredBuild.image} alt={featuredBuild.title} className="h-28 w-28 sm:h-32 sm:w-32 object-contain rounded-2xl shadow-sm group-hover:scale-105 transition-transform duration-500" />
+            <img src={isExternal ? featuredBuild.image : featuredBuild.image} alt={featuredBuild.title} className="h-36 w-36 sm:h-40 sm:w-40 object-contain rounded-2xl shadow-sm group-hover:scale-[1.03] transition-transform duration-500" />
           ) : (
-            <div className="h-24 w-24 sm:h-28 sm:w-28 rounded-2xl bg-gradient-to-br from-orange-400 to-rose-500 grid place-items-center shadow-sm group-hover:scale-105 transition-transform">
+            <div className="h-36 w-36 sm:h-44 sm:w-44 rounded-[22px] bg-gradient-to-br from-orange-400 to-rose-500 grid place-items-center shadow-lg group-hover:scale-[1.03] transition-transform">
               {/* Tagpuan logo - two circles like favicon */}
-              <svg viewBox="0 0 32 32" className="h-12 w-12 sm:h-14 sm:w-14" aria-hidden>
+              <svg viewBox="0 0 32 32" className="h-20 w-20 sm:h-24 sm:w-24" aria-hidden>
                 <rect width="32" height="32" rx="9" fill="url(#g)" />
                 <circle cx="11" cy="13" r="3" fill="white" />
                 <circle cx="22" cy="13" r="3" fill="white" />
