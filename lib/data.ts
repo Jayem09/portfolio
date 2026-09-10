@@ -7,7 +7,7 @@ export const featuredBuild = {
   label: "Featured Build",
   title: "Tagpuan — Random Chat Worldwide",
   description: "Free anonymous random video & text chat — where the world meets. No sign-up, instant matching, WebRTC-powered. Live at tagpuan.online with 100% free worldwide access, moderation, and PWA support.",
-  image: "https://www.tagpuan.online/og-image.png",
+  image: "https://image.thum.io/get/width/600/crop/400/noanimate/https://www.tagpuan.online",
   href: "https://www.tagpuan.online",
   ctaLabel: "Visit Live Site",
 };
