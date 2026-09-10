@@ -5,11 +5,11 @@ export type Education = { dates: string; title: string; institution: string; cam
 
 export const featuredBuild = {
   label: "Featured Build",
-  title: "Instagram Business Email Scraper",
-  description: "Python automation using ADB + UIAutomator that drives a real Instagram app on an Android emulator to extract business contact emails. Multi-stage pipeline: bio scan → Contact/Email button detection → popup parsing → logcat mailto fallback. Packaged as Flask web app with one-click launchers for non-technical clients.",
-  image: "",
-  href: "#projects",
-  ctaLabel: "View Project",
+  title: "Tagpuan — Random Chat Worldwide",
+  description: "Free anonymous random video & text chat — where the world meets. No sign-up, instant matching, WebRTC-powered. Live at tagpuan.online with 100% free worldwide access, moderation, and PWA support.",
+  image: "https://www.tagpuan.online/og-image.png",
+  href: "https://www.tagpuan.online",
+  ctaLabel: "Visit Live Site",
 };
 
 export const experiences: Experience[] = [
@@ -48,6 +48,15 @@ export const experiences: Experience[] = [
 ];
 
 export const projects: Project[] = [
+  {
+    slug: "tagpuan",
+    title: "Tagpuan",
+    description: "Random video & text chat worldwide — free, anonymous, no sign-up. Instant WebRTC matching, moderation, and PWA. Where the world meets.",
+    image: "https://www.tagpuan.online/og-image.png",
+    liveUrl: "https://www.tagpuan.online",
+    githubUrl: "https://github.com/Jayem09/tagpuan",
+    tags: ["React","Vite","WebRTC","Tailwind","Vercel","PWA"],
+  },
   {
     slug: "instagram-scraper",
     title: "Instagram Business Email Scraper",
