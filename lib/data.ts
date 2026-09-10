@@ -7,7 +7,7 @@ export const featuredBuild = {
   label: "Featured Build",
   title: "ShipFast — private vault & workflow OS",
   description: "Local-first password vault and personal workflow desktop app. Built with Tauri + Rust + Next.js. End-to-end encrypted, offline-capable.",
-  image: "/placeholder-keepR.gif",
+  image: "",
   href: "#projects",
   ctaLabel: "Read case study",
 };
