@@ -111,7 +111,6 @@ export default function TechStack() {
         <div className="pointer-events-none absolute inset-y-0 left-0 w-6 sm:w-8 bg-gradient-to-r from-white dark:from-ink to-transparent rounded-l-xl" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-6 sm:w-8 bg-gradient-to-l from-white dark:from-ink to-transparent rounded-r-xl" />
       </div>
-      <p className="text-xs text-gray-400 dark:text-gray-500">24 technologies · 50s smooth slide · Brand colors · Pauses on hover</p>
     </section>
   );
 }
