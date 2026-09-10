@@ -54,7 +54,7 @@ export const projects: Project[] = [
     description: "ADB + UIAutomator automation that extracts emails from Instagram business profiles via a real Android emulator. Flask UI + Windows/Mac launchers for non-technical clients.",
     image: "",
     liveUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/Jayem09",
     tags: ["Python","ADB","UIAutomator","Flask","Automation"],
   },
   {
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     description: "End-to-end e-commerce platform: catalog, cart, checkout, auth, orders, payments, and notifications. Full frontend, backend, and DB architecture with production deployment and monitoring.",
     image: "",
     liveUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/Jayem09",
     tags: ["React.js","Node.js","MySQL","PostgreSQL","Docker","AWS"],
   },
 ];
@@ -95,6 +95,7 @@ export const contact = {
   phone: "+63 961 167 8278",
   calendly: "mailto:johndinglasan12@gmail.com",
   linkedin: "mailto:johndinglasan12@gmail.com",
-  github: "https://github.com/",
+  github: "https://github.com/Jayem09",
   resume: "/resume.pdf",
+  githubUsername: "Jayem09",
 };
