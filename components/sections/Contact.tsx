@@ -15,9 +15,6 @@ export default function Contact() {
           <a href={contact.calendly} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-4 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors bg-white dark:bg-ink text-sm font-medium text-gray-900 dark:text-white bg-ink/5 dark:bg-white/5">
             <span className="flex-1">Let&apos;s Talk — Schedule a Call</span> <span aria-hidden>→</span>
           </a>
-          <a href={contact.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-4 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors bg-white dark:bg-ink text-sm font-medium text-gray-700 dark:text-gray-300">
-            GitHub <span aria-hidden>→</span>
-          </a>
         </div>
       </div>
     </section>
