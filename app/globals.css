@@ -65,3 +65,16 @@
 }
 .jjk-flash { animation: jjk-flash 0.6s ease-out forwards; }
 .jjk-ink { animation: jjk-ink 0.55s cubic-bezier(0.7,0,0.3,1) forwards; }
+
+/* JJK Cursed Tool - Inverted Spear slash */
+@keyframes jjk-slash {
+  0% { transform: translateX(-120%) skewX(-12deg); opacity: 0; }
+  15% { opacity: 1; }
+  50% { transform: translateX(0%) skewX(-12deg); opacity: 1; }
+  100% { transform: translateX(120%) skewX(-12deg); opacity: 0; }
+}
+@keyframes jjk-tool-spin {
+  0% { transform: rotate(-45deg) scale(0.5); opacity: 0; }
+  30% { transform: rotate(15deg) scale(1.1); opacity: 1; }
+  100% { transform: rotate(45deg) scale(0.9); opacity: 0; }
+}
