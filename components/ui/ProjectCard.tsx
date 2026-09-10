@@ -1,18 +1,34 @@
 import { Project } from "@/lib/data";
+
+function getScreenshotUrl(liveUrl: string) {
+  // thum.io - free screenshot service, no key, caches
+  // width 600 crop 400 noanimate keeps it static
+  return `https://image.thum.io/get/width/600/crop/400/noanimate/${liveUrl}`;
+}
+
 export default function ProjectCard({ project }: { project: Project }) {
   const hasImg = !!project.image;
-  const isExternal = hasImg && (project.image!.startsWith("http") || project.image!.startsWith("https://"));
+  const isExternal = hasImg && (project.image!.startsWith("http://") || project.image!.startsWith("https://"));
   const imgSrc = isExternal ? project.image! : hasImg ? `/images/projects/${project.image}` : "";
+  const hasScreenshot = !!project.liveUrl;
+  const screenshotUrl = hasScreenshot ? getScreenshotUrl(project.liveUrl!) : "";
   const href = project.detailsUrl || project.liveUrl || project.githubUrl || "#";
   const showLive = !!project.liveUrl;
   const showGithub = !!project.githubUrl;
 
+  const showImage = hasImg || hasScreenshot;
+
   return (
     <div className="flex h-full flex-col gap-2 bg-white dark:bg-ink border border-dashed border-gray-300 dark:border-gray-700 p-2 rounded-xl hover:shadow-sm hover:border-gray-400 dark:hover:border-gray-600 transition-all">
-      <a href={href} target={showLive ? "_blank" : undefined} rel={showLive ? "noopener noreferrer" : undefined} className="block overflow-hidden rounded-lg border border-dashed border-gray-200 dark:border-gray-700 group">
-        {hasImg ? (
+      <a href={href} target={showLive ? "_blank" : undefined} rel={showLive ? "noopener noreferrer" : undefined} className="block overflow-hidden rounded-lg border border-dashed border-gray-200 dark:border-gray-700 group bg-gray-50 dark:bg-black/20">
+        {showImage ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={imgSrc} alt={project.title} className="h-40 w-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img
+            src={hasImg ? imgSrc : screenshotUrl}
+            alt={`${project.title} landing page preview`}
+            className="h-40 w-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
         ) : (
           <div className="grid h-40 w-full place-items-center bg-white dark:bg-ink">
             <span className="text-sm tracking-[0.35em] text-gray-400 dark:text-gray-500">COMING SOON</span>
