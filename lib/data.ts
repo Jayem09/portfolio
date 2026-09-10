@@ -139,7 +139,7 @@ export const contact = {
   sub: "Open to full-time Software Engineer roles and freelance builds — React, Python, Flask, Node.js, and full-stack web systems. Based in Lipa, Philippines (remote-friendly). Let's ship something useful.",
   email: "johndinglasan12@gmail.com",
   phone: "+63 961 167 8278",
-  calendly: "https://calendly.com/johndinglasan12",
+  calendly: "https://calendly.com/johndinglasan12/30min",
   linkedin: "mailto:johndinglasan12@gmail.com",
   github: "https://github.com/Jayem09",
   resume: "/resume.pdf",
