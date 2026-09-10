@@ -53,7 +53,7 @@ export const projects: Project[] = [
     slug: "tagpuan",
     title: "Tagpuan",
     description: "Random video & text chat worldwide — free, anonymous, no sign-up. Instant WebRTC matching, moderation, and PWA. Where the world meets.",
-    image: "https://www.tagpuan.online/og-image.png",
+    image: "",
     liveUrl: "https://www.tagpuan.online",
     githubUrl: "https://github.com/Jayem09/tagpuan",
     tags: ["React","Vite","WebRTC","Tailwind","Vercel","PWA"],
