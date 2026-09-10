@@ -24,16 +24,32 @@ export default function Hero() {
           <p className="text-xs text-gray-400 dark:text-gray-500">Lipa, Philippines · +63 961 167 8278 · johndinglasan12@gmail.com · Available for remote</p>
         </div>
         <div className="shrink-0 flex justify-start sm:justify-end">
-          <div className="relative group">
-            <div className="absolute inset-0 rounded-full border border-dashed border-gray-300 dark:border-gray-700 scale-[1.08] opacity-60 group-hover:rotate-6 transition-transform duration-700" aria-hidden />
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-white/10 dark:to-white/5 blur-[1px] scale-[1.02]" aria-hidden />
+          <div className="relative group h-32 w-32 sm:h-40 sm:w-40">
+            {/* dashed outer ring */}
+            <div className="absolute inset-0 rounded-full border border-dashed border-gray-300 dark:border-gray-700 scale-[1.08] opacity-60 group-hover:rotate-12 transition-transform duration-700" aria-hidden />
+            {/* glow aura */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/20 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[1px] scale-[1.05]" aria-hidden />
+            {/* Toji - default */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/image.png"
+              alt="Toji Fushiguro"
+              className="absolute inset-0 h-full w-full rounded-full object-cover object-top border-2 border-white dark:border-ink shadow-lg animate-float group-hover:opacity-0 group-hover:scale-110 group-hover:blur-[1px] transition-all duration-500"
+            />
+            {/* You - on hover with JJK ink reveal */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/me.jpeg"
               alt="John Mark Dinglasan"
-              className="relative h-32 w-32 sm:h-40 sm:w-40 rounded-full object-cover border-2 border-white dark:border-ink shadow-lg animate-float group-hover:scale-[1.03] transition-transform duration-500"
+              className="absolute inset-0 h-full w-full rounded-full object-cover border-2 border-white dark:border-ink shadow-lg opacity-0 scale-90 [clip-path:circle(0%_at_50%_50%)] group-hover:opacity-100 group-hover:scale-100 group-hover:[clip-path:circle(150%_at_50%_50%)] transition-all duration-700 ease-[cubic-bezier(0.7,0,0.3,1)]"
             />
-            <span className="absolute -bottom-1 -right-1 h-3 w-3 rounded-full bg-green-500 border-2 border-white dark:border-ink shadow" aria-hidden title="Available for work" />
+            {/* flash burst */}
+            <div className="absolute inset-0 rounded-full bg-white/80 dark:bg-blue-400/20 opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-100 hidden group-hover:block" style={{ animation: 'jjk-flash 0.6s ease-out' }} aria-hidden />
+            {/* domain text */}
+            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-ink text-white dark:bg-white dark:text-black text-[9px] tracking-[0.2em] px-2 py-0.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap font-medium">
+              DOMAIN EXPANSION
+            </span>
+            <span className="absolute -bottom-1 -right-1 h-3 w-3 rounded-full bg-green-500 border-2 border-white dark:border-ink shadow group-hover:hidden" aria-hidden title="Available for work" />
           </div>
         </div>
       </div>
